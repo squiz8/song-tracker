@@ -2,14 +2,16 @@
   "name": "server",
   "version": "1.0.0",
   "description": "Express API",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon src/app.js --exec  \"npm run lint && node\"",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js",
+    "dev": "nodemon src/app"
   },
   "author": "Samuel Ordu",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
